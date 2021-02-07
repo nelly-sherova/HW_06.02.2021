@@ -58,15 +58,6 @@ namespace GenerycTypesHw
                     j++;
                 }
             }
-           /* if (begin_index > 0 && end_index < 0)
-            {
-                for (int i = begin_index; i < arr.Length + end_index; i++)
-                {
-                    Array.Resize(ref newArr, newArr.Length + 1);
-                    newArr[j] = arr[begin_index];
-                    j++;
-                }
-            }*/
             if (begin_index < 0)
             {
                 
@@ -110,7 +101,7 @@ namespace GenerycTypesHw
             Console.WriteLine("Сам массив: ");
             ArrayHelper<string>.ShowArray(arr);
             Console.WriteLine("Метод slice: ");
-            string[] newArr = ArrayHelper<string>.Slice(arr, 1, -3);
+            string[] newArr = ArrayHelper<string>.Slice(arr, -4);
             ArrayHelper<string>.ShowArray(newArr);
         }
     }
